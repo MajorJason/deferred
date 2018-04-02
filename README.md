@@ -80,22 +80,36 @@ deferred对象的一大好处，就是他能添加多个回调函数
 	
 ## 4.deferred的一些方法
 
-####deferred.catch()
+#### deferred.catch()
+
 	当Deferred对象拒绝（reject）时，调用添加的处理程序
-####deferred.done()
+	
+#### deferred.done()
+
 	当Deferred对象解决时，调用添加处理程序
-####deferred.fail()
+	
+#### deferred.fail()
+
 	当Deferred对象拒绝时，调用添加处理程序
-####deffered.resolve()
+	
+#### deffered.resolve()
+
 	解决Deffered（延迟）对象，并根据给定的args参数调用任何完成回调函数（doneCallbacks）.
-####deferred.reject()
+	
+#### deferred.reject()
+
 	拒绝Defered（延迟）对象，并根据给定的args参数调用任何失败回调函数（failCakkbacks）。
-####deferred.promise()
+	
+#### deferred.promise()
+
 	返回一个Promise对象用来观察当某种类型的所有兴东绑定到集合，排队与否还是已经完成。
-####deferred.state()
+	
+#### deferred.state()
+
 	确定一个Deferred（延迟）对象的当前状态
 
 ## 5.deferred的实例
+
 我们不仅可以在ajax操作中使用deferred，在本地的操作中我们也可以使用。不管是同步还是异步都可以使用deferred对象的各种方法，指定回调函数。
 
 	var dtd = $.Deferred();   //新建一个deferred对象
